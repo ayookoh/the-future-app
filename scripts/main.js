@@ -9,19 +9,17 @@ const optionsContainer = document.getElementById('options-container');
 const progressTracker = document.getElementById('progress-tracker');
 const languageToggle = document.getElementById('language-toggle');
 const timerDisplay = document.getElementById('timer');
+const mediaContainer = document.getElementById('media-container');
+const explanationContainer = document.getElementById('explanation-container');
 
-// Fetch questions
+// Fetch questions from the Supabase database
 async function loadQuestions() {
     try {
-        // Simulate question fetching
-        questions = [
-            { fr: "Quelle est la vitesse maximale sur autoroute par temps sec?", en: "What is the maximum speed on the motorway in dry conditions?", options: ["90 km/h", "110 km/h", "120 km/h", "130 km/h"], answer: 3 },
-            { fr: "À quelle distance doit-on placer le triangle de signalisation?", en: "At what distance should the warning triangle be placed?", options: ["30 m", "50 m", "100 m", "150 m"], answer: 1 },
-            { fr: "Qui a la priorité sur un rond-point?", en: "Who has priority in a roundabout?", options: ["Vehicles entering", "Vehicles already in the roundabout", "Pedestrians", "Cyclists"], answer: 1 }
-        ];
-
-        questions.sort(() => Math.random() - 0.5);
-        startTimer(40 * 60);
+        const response = await fetch('https://api.supabase.co/your-endpoint');
+        const data = await response.json();
+        questions = data;
+        questions.sort(() => Math.random() - 0.5); // Shuffle questions
+        startTimer(40 * 60); // 40 minutes
         showQuestion();
     } catch (error) {
         alert("Error loading questions: " + error.message);
@@ -52,6 +50,25 @@ function showQuestion() {
     const question = questions[currentQuestion];
     questionContainer.innerText = language === 'fr' ? question.fr : question.en;
     optionsContainer.innerHTML = '';
+    mediaContainer.innerHTML = '';
+    explanationContainer.innerHTML = '';
+
+    // Display media if available
+    if (question.media_url) {
+        if (question.media_type === 'image') {
+            const img = document.createElement('img');
+            img.src = question.media_url;
+            img.alt = "Question Visual";
+            img.width = 300;
+            mediaContainer.appendChild(img);
+        } else if (question.media_type === 'video') {
+            const video = document.createElement('video');
+            video.src = question.media_url;
+            video.controls = true;
+            video.width = 300;
+            mediaContainer.appendChild(video);
+        }
+    }
 
     question.options.forEach((option, index) => {
         const button = document.createElement('button');
@@ -69,7 +86,9 @@ function checkAnswer(selected) {
         score++;
         alert('Correct!');
     } else {
-        alert('Wrong answer!');
+        const explanation = language === 'fr' ? questions[currentQuestion].explanation_fr : questions[currentQuestion].explanation_en;
+        alert(`Wrong! The correct answer was: ${questions[currentQuestion].options[correct]}`);
+        explanationContainer.innerText = `Explanation: ${explanation}`;
     }
     currentQuestion++;
     showQuestion();
