@@ -33,7 +33,7 @@ main {
     align-items: center;
 }
 
-#question-container, #options-container {
+#question-container, #options-container, #explanation-container {
     margin: 1rem 0;
     text-align: center;
 }
