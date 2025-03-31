@@ -1,17 +1,3 @@
-// Firebase Configuration (Replace with your own if needed)
-const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_APP.firebaseapp.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_APP.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID"
-};
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
-
 let questions = [];
 let currentQuestion = 0;
 let language = 'fr';
@@ -24,17 +10,17 @@ const progressTracker = document.getElementById('progress-tracker');
 const languageToggle = document.getElementById('language-toggle');
 const timerDisplay = document.getElementById('timer');
 
+// Fetch questions
 async function loadQuestions() {
     try {
-        const querySnapshot = await db.collection("questions").get();
-        querySnapshot.forEach((doc) => {
-            questions.push(doc.data());
-        });
+        // Simulate question fetching
+        questions = [
+            { fr: "Quelle est la vitesse maximale sur autoroute par temps sec?", en: "What is the maximum speed on the motorway in dry conditions?", options: ["90 km/h", "110 km/h", "120 km/h", "130 km/h"], answer: 3 },
+            { fr: "À quelle distance doit-on placer le triangle de signalisation?", en: "At what distance should the warning triangle be placed?", options: ["30 m", "50 m", "100 m", "150 m"], answer: 1 },
+            { fr: "Qui a la priorité sur un rond-point?", en: "Who has priority in a roundabout?", options: ["Vehicles entering", "Vehicles already in the roundabout", "Pedestrians", "Cyclists"], answer: 1 }
+        ];
 
-        // Shuffle the questions for randomization
         questions.sort(() => Math.random() - 0.5);
-
-        // Start the timer and show the first question
         startTimer(40 * 60);
         showQuestion();
     } catch (error) {
@@ -83,7 +69,7 @@ function checkAnswer(selected) {
         score++;
         alert('Correct!');
     } else {
-        alert(`Wrong! The correct answer was: ${questions[currentQuestion].options[correct]}`);
+        alert('Wrong answer!');
     }
     currentQuestion++;
     showQuestion();
@@ -91,7 +77,6 @@ function checkAnswer(selected) {
 
 function showResults() {
     alert(`You scored ${score} out of ${questions.length}`);
-    progressTracker.innerText = `Final Score: ${score}/${questions.length}`;
 }
 
 languageToggle.addEventListener('click', () => {
@@ -101,5 +86,4 @@ languageToggle.addEventListener('click', () => {
 
 document.getElementById('next-question').addEventListener('click', showQuestion);
 
-// Load questions from the database
 loadQuestions();
