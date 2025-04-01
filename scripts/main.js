@@ -12,12 +12,21 @@ const timerDisplay = document.getElementById('timer');
 const mediaContainer = document.getElementById('media-container');
 const explanationContainer = document.getElementById('explanation-container');
 
-// Fetch questions from the Supabase database
+// Firebase Configuration (Replace with your actual Supabase details)
+const supabaseUrl = "https://your-supabase-project-url.supabase.co";
+const supabaseKey = "your-supabase-public-anon-key";
+
 async function loadQuestions() {
     try {
-        const response = await fetch('https://api.supabase.co/your-endpoint');
-        const data = await response.json();
-        questions = data;
+        const response = await fetch(`${supabaseUrl}/rest/v1/questions`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'apikey': supabaseKey,
+                'Authorization': `Bearer ${supabaseKey}`,
+            }
+        });
+        questions = await response.json();
         questions.sort(() => Math.random() - 0.5); // Shuffle questions
         startTimer(40 * 60); // 40 minutes
         showQuestion();
