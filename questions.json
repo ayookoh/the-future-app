@@ -1,0 +1,142 @@
+[
+  {
+    "fr": "Montrez la commande de réglage de hauteur des feux.",
+    "en": "Show the headlight height adjustment control.",
+    "answer_fr": "Dispositif situé en général à gauche du volant.",
+    "answer_en": "Control usually located to the left of the steering wheel.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Pourquoi doit-on régler la hauteur des feux ?",
+    "en": "Why should the headlight height be adjusted?",
+    "answer_fr": "Pour ne pas éblouir les autres usagers.",
+    "answer_en": "To avoid dazzling other road users.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Comment et pourquoi protéger une zone de danger en cas d’accident de la route ?",
+    "en": "How and why should a danger zone be secured in the event of a road accident?",
+    "answer_fr": "En délimitant clairement et largement la zone de danger de façon visible pour protéger les victimes et éviter un sur-accident.",
+    "answer_en": "By clearly marking out the danger area so it is visible, to protect victims and avoid another accident.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Montrez où s'effectue le remplissage du produit lave-glace.",
+    "en": "Show where to refill the windshield washer fluid.",
+    "answer_fr": "Ouvrir le capot et montrer le bocal de liquide lave-glace.",
+    "answer_en": "Open the hood and point to the washer fluid reservoir.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Pourquoi est-il préférable d'utiliser un liquide spécial en hiver ?",
+    "en": "Why is it better to use a special fluid in winter?",
+    "answer_fr": "Pour éviter le gel du liquide.",
+    "answer_en": "To prevent the fluid from freezing.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quels comportements adopter en cas de diffusion du signal d’alerte du SAIP ?",
+    "en": "What should you do when the SAIP alert signal is broadcast?",
+    "answer_fr": "Se mettre en sécurité, s'informer grâce aux médias et respecter les consignes des autorités.",
+    "answer_en": "Get to safety, follow news from authorities and obey their instructions.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Mettez le rétroviseur intérieur en position \"nuit\".",
+    "en": "Set the interior rear-view mirror to the night position.",
+    "answer_fr": "Actionner la commande du rétroviseur ou expliquer le dispositif automatique.",
+    "answer_en": "Operate the mirror switch or mention the automatic system if equipped.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quel est l’intérêt de la position nuit ?",
+    "en": "What is the advantage of the night position?",
+    "answer_fr": "Ne pas être ébloui par les feux du véhicule suiveur.",
+    "answer_en": "To avoid being dazzled by the following vehicle's lights.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Comment est composé le signal d’alerte du SAIP diffusé par les sirènes ?",
+    "en": "How is the SAIP alert signal broadcast by sirens composed?",
+    "answer_fr": "Il se compose du Signal National d'Alerte en trois cycles successifs et du signal de fin d'alerte continu.",
+    "answer_en": "It consists of the National Alert Signal in three successive cycles and a continuous end-of-alert signal.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Contrôlez l'état du flanc sur l'un des pneumatiques.",
+    "en": "Check the condition of one tyre's sidewall.",
+    "answer_fr": "Vérifier qu'il est en bon état et signaler toute anomalie.",
+    "answer_en": "Ensure it is in good condition and report any defects.",
+    "image": "images/placeholder.png"
+  }
+  ,{
+    "fr": "Faites fonctionner les essuie-glaces avants du véhicule sur la position la plus rapide.",
+    "en": "Operate the front wipers at the fastest setting.",
+    "answer_fr": "En cas de pluie, lorsqu'ils laissent des traces sur le pare brise.",
+    "answer_en": "When it rains and they leave streaks on the windshield.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Vérifiez l'état et la propreté des plaques d'immatriculation.",
+    "en": "Check the condition and cleanliness of the licence plates.",
+    "answer_fr": "La plaque d'immatriculation et les feux doivent être visibles.",
+    "answer_en": "The licence plate and lights must remain visible.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Vérifiez la présence du gilet de haute visibilité.",
+    "en": "Check that a high-visibility vest is on board.",
+    "answer_fr": "Le triangle de pré-signalisation.",
+    "answer_en": "The warning triangle is also mandatory.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Montrez où s'effectue le contrôle du niveau du liquide de frein.",
+    "en": "Show where the brake fluid level is checked.",
+    "answer_fr": "Une perte d'efficacité du freinage.",
+    "answer_en": "A loss of braking efficiency.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Vérifiez la présence du certificat d'immatriculation du véhicule (ou carte grise).",
+    "en": "Check that the registration document is present.",
+    "answer_fr": "L'attestation d'assurance et le permis de conduire.",
+    "answer_en": "The insurance certificate and driving licence.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Contrôlez l'état de tous les balais d'essuie-glace du véhicule.",
+    "en": "Check the condition of all wiper blades.",
+    "answer_fr": "Une mauvaise visibilité en cas d'intempéries.",
+    "answer_en": "Poor visibility in bad weather.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Montrez l'indicateur de niveau de carburant.",
+    "en": "Show the fuel level indicator.",
+    "answer_fr": "Arrêter le moteur, ne pas fumer, ne pas téléphoner.",
+    "answer_en": "Stop the engine, don't smoke and don't phone while refuelling.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Montrez où s'effectue le remplissage du liquide de refroidissement.",
+    "en": "Show where to top up the coolant.",
+    "answer_fr": "Un risque de brûlure.",
+    "answer_en": "Risk of burns if the engine is hot.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Actionnez le dégivrage de la lunette arrière et montrez le voyant ou le repère correspondant.",
+    "en": "Activate the rear window defrost and show the indicator.",
+    "answer_fr": "Une insuffisance ou une absence de visibilité vers l'arrière.",
+    "answer_en": "Poor or no rear visibility.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Contrôlez l'état, la propreté et le fonctionnement de tous les clignotants côté trottoir.",
+    "en": "Check the condition, cleanliness and operation of all indicators on the kerb side.",
+    "answer_fr": "Non fonctionnement de l'une des ampoules.",
+    "answer_en": "One of the bulbs is not working.",
+    "image": "images/placeholder.png"
+  }
+]
