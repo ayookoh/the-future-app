@@ -1,0 +1,62 @@
+[
+  {
+    "fr": "Montrez la commande de réglage de hauteur des feux.",
+    "en": "Show the headlight height adjustment control.",
+    "answer_fr": "Dispositif situé en général à gauche du volant.",
+    "answer_en": "Control usually located to the left of the steering wheel."
+  },
+  {
+    "fr": "Pourquoi doit-on régler la hauteur des feux ?",
+    "en": "Why should the headlight height be adjusted?",
+    "answer_fr": "Pour ne pas éblouir les autres usagers.",
+    "answer_en": "To avoid dazzling other road users."
+  },
+  {
+    "fr": "Comment et pourquoi protéger une zone de danger en cas d’accident de la route ?",
+    "en": "How and why should a danger zone be secured in the event of a road accident?",
+    "answer_fr": "En délimitant clairement et largement la zone de danger de façon visible pour protéger les victimes et éviter un sur-accident.",
+    "answer_en": "By clearly marking out the danger area so it is visible, to protect victims and avoid another accident."
+  },
+  {
+    "fr": "Montrez où s'effectue le remplissage du produit lave-glace.",
+    "en": "Show where to refill the windshield washer fluid.",
+    "answer_fr": "Ouvrir le capot et montrer le bocal de liquide lave-glace.",
+    "answer_en": "Open the hood and point to the washer fluid reservoir."
+  },
+  {
+    "fr": "Pourquoi est-il préférable d'utiliser un liquide spécial en hiver ?",
+    "en": "Why is it better to use a special fluid in winter?",
+    "answer_fr": "Pour éviter le gel du liquide.",
+    "answer_en": "To prevent the fluid from freezing."
+  },
+  {
+    "fr": "Quels comportements adopter en cas de diffusion du signal d’alerte du SAIP ?",
+    "en": "What should you do when the SAIP alert signal is broadcast?",
+    "answer_fr": "Se mettre en sécurité, s'informer grâce aux médias et respecter les consignes des autorités.",
+    "answer_en": "Get to safety, follow news from authorities and obey their instructions."
+  },
+  {
+    "fr": "Mettez le rétroviseur intérieur en position \"nuit\".",
+    "en": "Set the interior rear-view mirror to the night position.",
+    "answer_fr": "Actionner la commande du rétroviseur ou expliquer le dispositif automatique.",
+    "answer_en": "Operate the mirror switch or mention the automatic system if equipped."
+  },
+  {
+    "fr": "Quel est l’intérêt de la position nuit ?",
+    "en": "What is the advantage of the night position?",
+    "answer_fr": "Ne pas être ébloui par les feux du véhicule suiveur.",
+    "answer_en": "To avoid being dazzled by the following vehicle's lights."
+  },
+  {
+    "fr": "Comment est composé le signal d’alerte du SAIP diffusé par les sirènes ?",
+    "en": "How is the SAIP alert signal broadcast by sirens composed?",
+    "answer_fr": "Il se compose du Signal National d'Alerte en trois cycles successifs et du signal de fin d'alerte continu.",
+    "answer_en": "It consists of the National Alert Signal in three successive cycles and a continuous end-of-alert signal."
+  },
+  {
+    "fr": "Contrôlez l'état du flanc sur l'un des pneumatiques.",
+    "en": "Check the condition of one tyre's sidewall.",
+    "answer_fr": "Vérifier qu'il est en bon état et signaler toute anomalie.",
+    "answer_en": "Ensure it is in good condition and report any defects."
+  }
+]
