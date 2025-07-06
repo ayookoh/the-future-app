@@ -1,17 +1,3 @@
-// Firebase Configuration (Replace with your own if needed)
-const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_APP.firebaseapp.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_APP.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
-    appId: "YOUR_APP_ID"
-};
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
-
 let questions = [];
 let currentQuestion = 0;
 let language = 'fr';
@@ -20,22 +6,24 @@ let timer;
 
 const questionContainer = document.getElementById('question-container');
 const optionsContainer = document.getElementById('options-container');
+const answerContainer = document.getElementById('answer-container');
 const progressTracker = document.getElementById('progress-tracker');
 const languageToggle = document.getElementById('language-toggle');
 const timerDisplay = document.getElementById('timer');
+const nextButton = document.getElementById('next-question');
+const showAnswerButton = document.getElementById('show-answer');
 
 async function loadQuestions() {
     try {
-        const querySnapshot = await db.collection("questions").get();
-        querySnapshot.forEach((doc) => {
-            questions.push(doc.data());
-        });
+        const response = await fetch('questions.json');
+        questions = await response.json();
 
-        // Shuffle the questions for randomization
+        // Shuffle the questions randomly
         questions.sort(() => Math.random() - 0.5);
 
-        // Start the timer and show the first question
+        // Start timer (40 minutes)
         startTimer(40 * 60);
+
         showQuestion();
     } catch (error) {
         alert("Error loading questions: " + error.message);
@@ -60,20 +48,39 @@ function showQuestion() {
     if (currentQuestion >= questions.length) {
         clearInterval(timer);
         showResults();
+        questionContainer.innerText = 'No more questions.';
+        answerContainer.innerText = '';
+        progressTracker.innerText = `Questions: ${questions.length}`;
+        nextButton.disabled = true;
+        showAnswerButton.disabled = true;
         return;
     }
 
-    const question = questions[currentQuestion];
-    questionContainer.innerText = language === 'fr' ? question.fr : question.en;
-    optionsContainer.innerHTML = '';
+    const q = questions[currentQuestion];
 
-    question.options.forEach((option, index) => {
+    // Clear previous question and display image
+    questionContainer.innerHTML = '';
+    const img = document.createElement('img');
+    img.src = q.image || 'images/placeholder.png';
+    img.alt = 'illustration';
+    img.className = 'question-image';
+    questionContainer.appendChild(img);
+
+    // Display question text
+    const p = document.createElement('p');
+    p.innerText = language === 'fr' ? q.fr : q.en;
+    questionContainer.appendChild(p);
+
+    // Display options
+    optionsContainer.innerHTML = '';
+    q.options.forEach((option, index) => {
         const button = document.createElement('button');
         button.innerText = option;
         button.onclick = () => checkAnswer(index);
         optionsContainer.appendChild(button);
     });
 
+    answerContainer.innerText = '';
     progressTracker.innerText = `Question ${currentQuestion + 1} of ${questions.length}`;
 }
 
@@ -85,20 +92,23 @@ function checkAnswer(selected) {
     } else {
         alert(`Wrong! The correct answer was: ${questions[currentQuestion].options[correct]}`);
     }
-    currentQuestion++;
-    showQuestion();
 }
 
-function showResults() {
-    alert(`You scored ${score} out of ${questions.length}`);
-    progressTracker.innerText = `Final Score: ${score}/${questions.length}`;
-}
+showAnswerButton.addEventListener('click', () => {
+    if (currentQuestion < questions.length) {
+        const q = questions[currentQuestion];
+        answerContainer.innerText = language === 'fr' ? q.answer_fr : q.answer_en;
+    }
+});
+
+nextButton.addEventListener('click', () => {
+    currentQuestion++;
+    showQuestion();
+});
 
 languageToggle.addEventListener('click', () => {
     language = language === 'fr' ? 'en' : 'fr';
     showQuestion();
 });
-
-document.getElementById('next-question').addEventListener('click', loadQuestions);
 
 loadQuestions();
