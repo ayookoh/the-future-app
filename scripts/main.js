@@ -62,7 +62,7 @@ function showQuestion() {
     questionContainer.innerHTML = '';
     const img = document.createElement('img');
     img.src = q.image || 'images/placeholder.png';
-    img.alt = 'illustration';
+    img.alt = language === 'fr' ? q.fr : q.en;
     img.className = 'question-image';
     questionContainer.appendChild(img);
 
