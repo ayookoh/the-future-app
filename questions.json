@@ -1,142 +1,824 @@
 [
   {
-    "fr": "Montrez la commande de réglage de hauteur des feux.",
-    "en": "Show the headlight height adjustment control.",
-    "answer_fr": "Dispositif situé en général à gauche du volant.",
-    "answer_en": "Control usually located to the left of the steering wheel.",
+    "fr": "Je circule à 90 km/h. Est-ce que la distance de freinage sera plus courte, égale ou plus longue si je double un poids lourd ?",
+    "en": "I am driving at 90 km/h. Will the braking distance be shorter, equal, or longer if I overtake a truck?",
+    "options": ["Plus courte", "Égale", "Plus longue"],
+    "answer": 2,
+    "answer_fr": "Plus longue – car il faut plus de temps pour freiner après une manœuvre de dépassement.",
+    "answer_en": "Longer – because braking after overtaking takes more time and distance.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Pourquoi doit-on régler la hauteur des feux ?",
-    "en": "Why should the headlight height be adjusted?",
-    "answer_fr": "Pour ne pas éblouir les autres usagers.",
-    "answer_en": "To avoid dazzling other road users.",
+    "fr": "Est-il permis de traverser une ligne continue pour dépasser un cycliste ?",
+    "en": "Is it permitted to cross a solid line to overtake a cyclist?",
+    "options": ["Oui", "Non"],
+    "answer": 0,
+    "answer_fr": "Oui – à condition de le faire en toute sécurité sans mettre en danger les autres usagers.",
+    "answer_en": "Yes – provided it can be done safely without endangering other road users.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Comment et pourquoi protéger une zone de danger en cas d’accident de la route ?",
-    "en": "How and why should a danger zone be secured in the event of a road accident?",
-    "answer_fr": "En délimitant clairement et largement la zone de danger de façon visible pour protéger les victimes et éviter un sur-accident.",
-    "answer_en": "By clearly marking out the danger area so it is visible, to protect victims and avoid another accident.",
+    "fr": "À quoi sert l’ABS (système antiblocage des roues) ?",
+    "en": "What is the purpose of ABS (Anti-lock Braking System)?",
+    "options": [
+      "Réduire la distance de freinage",
+      "Permettre de garder le contrôle du véhicule en freinant",
+      "Augmenter la puissance de freinage"
+    ],
+    "answer": 1,
+    "answer_fr": "Permet de garder le contrôle du véhicule pendant un freinage d'urgence.",
+    "answer_en": "It allows the driver to maintain control of the vehicle during emergency braking.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Montrez où s'effectue le remplissage du produit lave-glace.",
-    "en": "Show where to refill the windshield washer fluid.",
-    "answer_fr": "Ouvrir le capot et montrer le bocal de liquide lave-glace.",
-    "answer_en": "Open the hood and point to the washer fluid reservoir.",
+    "fr": "En cas d'accident sans blessé, dois-je prévenir les secours ?",
+    "en": "In the event of an accident without injury, should I notify emergency services?",
+    "options": ["Oui", "Non"],
+    "answer": 1,
+    "answer_fr": "Non – s’il n’y a pas de blessé, l'appel aux secours n'est pas nécessaire.",
+    "answer_en": "No – if no one is injured, calling emergency services is not necessary.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Pourquoi est-il préférable d'utiliser un liquide spécial en hiver ?",
-    "en": "Why is it better to use a special fluid in winter?",
-    "answer_fr": "Pour éviter le gel du liquide.",
-    "answer_en": "To prevent the fluid from freezing.",
+    "fr": "Le temps de réaction moyen d’un conducteur est de :",
+    "en": "The average reaction time of a driver is:",
+    "options": ["0,5 seconde", "1 seconde", "2 secondes"],
+    "answer": 1,
+    "answer_fr": "En moyenne, le temps de réaction est de 1 seconde.",
+    "answer_en": "On average, the reaction time is 1 second.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Quels comportements adopter en cas de diffusion du signal d’alerte du SAIP ?",
-    "en": "What should you do when the SAIP alert signal is broadcast?",
-    "answer_fr": "Se mettre en sécurité, s'informer grâce aux médias et respecter les consignes des autorités.",
-    "answer_en": "Get to safety, follow news from authorities and obey their instructions.",
+    "fr": "Quelle est la signification d’un panneau de danger triangulaire à fond jaune ?",
+    "en": "What does a triangular warning sign with a yellow background indicate?",
+    "options": [
+      "Danger temporaire",
+      "Danger permanent",
+      "Indication touristique"
+    ],
+    "answer": 0,
+    "answer_fr": "Ce panneau signale un danger temporaire, souvent lié à des travaux.",
+    "answer_en": "This sign indicates a temporary hazard, often related to roadworks.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Mettez le rétroviseur intérieur en position \"nuit\".",
-    "en": "Set the interior rear-view mirror to the night position.",
-    "answer_fr": "Actionner la commande du rétroviseur ou expliquer le dispositif automatique.",
-    "answer_en": "Operate the mirror switch or mention the automatic system if equipped.",
+    "fr": "Le taux d’alcool maximal autorisé pour un conducteur novice est de :",
+    "en": "What is the maximum legal blood alcohol level for a novice driver?",
+    "options": ["0,2 g/L", "0,5 g/L", "0,8 g/L"],
+    "answer": 0,
+    "answer_fr": "Pour un conducteur novice, le taux d’alcool maximal autorisé est de 0,2 g/L.",
+    "answer_en": "For a novice driver, the legal blood alcohol limit is 0.2 g/L.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Quel est l’intérêt de la position nuit ?",
-    "en": "What is the advantage of the night position?",
-    "answer_fr": "Ne pas être ébloui par les feux du véhicule suiveur.",
-    "answer_en": "To avoid being dazzled by the following vehicle's lights.",
+    "fr": "Un feu orange clignotant signifie :",
+    "en": "A flashing orange traffic light means:",
+    "options": ["Arrêt obligatoire", "Céder le passage", "Circulation prudente"],
+    "answer": 2,
+    "answer_fr": "Un feu orange clignotant impose une circulation avec prudence.",
+    "answer_en": "A flashing orange light indicates cautious driving is required.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Comment est composé le signal d’alerte du SAIP diffusé par les sirènes ?",
-    "en": "How is the SAIP alert signal broadcast by sirens composed?",
-    "answer_fr": "Il se compose du Signal National d'Alerte en trois cycles successifs et du signal de fin d'alerte continu.",
-    "answer_en": "It consists of the National Alert Signal in three successive cycles and a continuous end-of-alert signal.",
+    "fr": "Je peux utiliser les feux de brouillard avant :",
+    "en": "I may use front fog lights:",
+    "options": ["Uniquement par temps de brouillard", "Par temps de pluie ou neige", "Par beau temps"],
+    "answer": 1,
+    "answer_fr": "Les feux de brouillard avant peuvent être utilisés en cas de pluie, brouillard ou neige.",
+    "answer_en": "Front fog lights can be used in case of rain, fog, or snow.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Contrôlez l'état du flanc sur l'un des pneumatiques.",
-    "en": "Check the condition of one tyre's sidewall.",
-    "answer_fr": "Vérifier qu'il est en bon état et signaler toute anomalie.",
-    "answer_en": "Ensure it is in good condition and report any defects.",
+    "fr": "Que signifie un panneau rond à fond bleu avec une flèche blanche ?",
+    "en": "What does a round blue sign with a white arrow indicate?",
+    "options": ["Obligation", "Interdiction", "Information"],
+    "answer": 0,
+    "answer_fr": "Un panneau rond à fond bleu avec une flèche blanche indique une obligation.",
+    "answer_en": "A round blue sign with a white arrow indicates an obligation.",
     "image": "images/placeholder.png"
-  }
-  ,{
-    "fr": "Faites fonctionner les essuie-glaces avants du véhicule sur la position la plus rapide.",
-    "en": "Operate the front wipers at the fastest setting.",
-    "answer_fr": "En cas de pluie, lorsqu'ils laissent des traces sur le pare brise.",
-    "answer_en": "When it rains and they leave streaks on the windshield.",
+ },
+  {
+    "fr": "En roulant de nuit sur une route non éclairée, quels feux dois-je utiliser en l’absence de tout autre usager ?",
+    "en": "When driving at night on an unlit road with no other road users, which lights should I use?",
+    "options": ["Feux de position", "Feux de croisement", "Feux de route"],
+    "answer": 2,
+    "answer_fr": "Les feux de route assurent une visibilité maximale sur une route sombre sans gêner les autres usagers.",
+    "answer_en": "High beam headlights provide maximum visibility on dark roads without other road users.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Vérifiez l'état et la propreté des plaques d'immatriculation.",
-    "en": "Check the condition and cleanliness of the licence plates.",
-    "answer_fr": "La plaque d'immatriculation et les feux doivent être visibles.",
-    "answer_en": "The licence plate and lights must remain visible.",
+    "fr": "Quel est l’effet principal de l’alcool sur la conduite ?",
+    "en": "What is the main effect of alcohol on driving?",
+    "options": ["Amélioration des réflexes", "Diminution de la vigilance", "Augmentation de la précision"],
+    "answer": 1,
+    "answer_fr": "L’alcool diminue fortement la vigilance et les réflexes.",
+    "answer_en": "Alcohol significantly reduces alertness and reflexes.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Vérifiez la présence du gilet de haute visibilité.",
-    "en": "Check that a high-visibility vest is on board.",
-    "answer_fr": "Le triangle de pré-signalisation.",
-    "answer_en": "The warning triangle is also mandatory.",
+    "fr": "Quelle est la principale conséquence d’un excès de vitesse ?",
+    "en": "What is the main consequence of speeding?",
+    "options": ["Moins d’usure du moteur", "Réduction des distances d’arrêt", "Gravité accrue des accidents"],
+    "answer": 2,
+    "answer_fr": "L’excès de vitesse augmente la gravité des accidents.",
+    "answer_en": "Speeding increases the severity of accidents.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Montrez où s'effectue le contrôle du niveau du liquide de frein.",
-    "en": "Show where the brake fluid level is checked.",
-    "answer_fr": "Une perte d'efficacité du freinage.",
-    "answer_en": "A loss of braking efficiency.",
+    "fr": "Que signifie un panneau rond à fond rouge barré d’une ligne blanche horizontale ?",
+    "en": "What does a round red sign with a horizontal white line mean?",
+    "options": ["Interdiction d’entrée", "Fin d’interdiction", "Voie prioritaire"],
+    "answer": 0,
+    "answer_fr": "Ce panneau signifie interdiction d’entrer.",
+    "answer_en": "This sign means no entry.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Vérifiez la présence du certificat d'immatriculation du véhicule (ou carte grise).",
-    "en": "Check that the registration document is present.",
-    "answer_fr": "L'attestation d'assurance et le permis de conduire.",
-    "answer_en": "The insurance certificate and driving licence.",
+    "fr": "Dans quelle situation dois-je utiliser le klaxon en agglomération ?",
+    "en": "When should I use the horn in urban areas?",
+    "options": ["Pour saluer un ami", "En cas de danger immédiat", "Pour signaler un dépassement"],
+    "answer": 1,
+    "answer_fr": "Le klaxon en agglomération ne s’utilise qu’en cas de danger immédiat.",
+    "answer_en": "The horn in urban areas should only be used in immediate danger.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Contrôlez l'état de tous les balais d'essuie-glace du véhicule.",
-    "en": "Check the condition of all wiper blades.",
-    "answer_fr": "Une mauvaise visibilité en cas d'intempéries.",
-    "answer_en": "Poor visibility in bad weather.",
+    "fr": "Sur une route enneigée, quel équipement améliore l’adhérence ?",
+    "en": "On a snowy road, what equipment improves grip?",
+    "options": ["Pneus lisses", "Chaînes ou pneus hiver", "Pression plus élevée des pneus"],
+    "answer": 1,
+    "answer_fr": "Les chaînes et pneus hiver sont adaptés aux conditions neigeuses.",
+    "answer_en": "Chains and winter tires are suitable for snowy conditions.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Montrez l'indicateur de niveau de carburant.",
-    "en": "Show the fuel level indicator.",
-    "answer_fr": "Arrêter le moteur, ne pas fumer, ne pas téléphoner.",
-    "answer_en": "Stop the engine, don't smoke and don't phone while refuelling.",
+    "fr": "Quand dois-je utiliser les feux de croisement ?",
+    "en": "When should I use dipped headlights?",
+    "options": ["De jour sur autoroute", "La nuit en croisant un autre véhicule", "Quand il fait beau"],
+    "answer": 1,
+    "answer_fr": "Les feux de croisement s’utilisent notamment de nuit lorsqu’un autre véhicule arrive en face.",
+    "answer_en": "Dipped headlights are used at night when another vehicle is approaching.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Montrez où s'effectue le remplissage du liquide de refroidissement.",
-    "en": "Show where to top up the coolant.",
-    "answer_fr": "Un risque de brûlure.",
-    "answer_en": "Risk of burns if the engine is hot.",
+    "fr": "Quelle est la première chose à faire en cas d’accident ?",
+    "en": "What is the first thing to do in the event of an accident?",
+    "options": ["Sécuriser les lieux", "Photographier la scène", "Déplacer les véhicules"],
+    "answer": 0,
+    "answer_fr": "Il faut d’abord sécuriser les lieux pour éviter un suraccident.",
+    "answer_en": "The first step is to secure the scene to prevent further accidents.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Actionnez le dégivrage de la lunette arrière et montrez le voyant ou le repère correspondant.",
-    "en": "Activate the rear window defrost and show the indicator.",
-    "answer_fr": "Une insuffisance ou une absence de visibilité vers l'arrière.",
-    "answer_en": "Poor or no rear visibility.",
+    "fr": "Un panneau triangulaire avec un pictogramme noir sur fond blanc signifie :",
+    "en": "A triangular sign with a black pictogram on a white background means:",
+    "options": ["Information touristique", "Danger temporaire", "Danger permanent"],
+    "answer": 2,
+    "answer_fr": "Il signale un danger permanent.",
+    "answer_en": "It indicates a permanent hazard.",
     "image": "images/placeholder.png"
   },
   {
-    "fr": "Contrôlez l'état, la propreté et le fonctionnement de tous les clignotants côté trottoir.",
-    "en": "Check the condition, cleanliness and operation of all indicators on the kerb side.",
-    "answer_fr": "Non fonctionnement de l'une des ampoules.",
-    "answer_en": "One of the bulbs is not working.",
+    "fr": "Quelles sont les conséquences d’un défaut de contrôle technique ?",
+    "en": "What are the consequences of a missed vehicle inspection?",
+    "options": ["Aucune", "Amende et immobilisation possible", "Réduction d’assurance"],
+    "answer": 1,
+    "answer_fr": "L’absence de contrôle technique peut entraîner une amende et l’immobilisation du véhicule.",
+    "answer_en": "Failure to undergo inspection can lead to a fine and vehicle immobilisation.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Que dois-je faire en cas de fatigue au volant ?",
+    "en": "What should I do if I feel tired while driving?",
+    "options": ["Boire du café et continuer", "Faire une pause pour dormir", "Ouvrir la fenêtre et accélérer"],
+    "answer": 1,
+    "answer_fr": "Il est recommandé de faire une pause et de dormir si possible.",
+    "answer_en": "It is recommended to take a break and sleep if possible.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "À quoi sert une bande d'arrêt d'urgence ?",
+    "en": "What is the purpose of the emergency lane?",
+    "options": ["Stationnement temporaire", "Arrêt en cas de panne ou d'urgence", "Voie pour les deux-roues"],
+    "answer": 1,
+    "answer_fr": "La bande d'arrêt d'urgence est réservée aux arrêts en cas de panne ou d'urgence.",
+    "answer_en": "The emergency lane is reserved for breakdowns or urgent stops.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Que signifie une flèche jaune sur le sol en agglomération ?",
+    "en": "What does a yellow arrow on the ground in urban areas indicate?",
+    "options": ["Itinéraire prioritaire", "Changement de voie obligatoire", "Interdiction de dépasser"],
+    "answer": 1,
+    "answer_fr": "Elle indique un changement obligatoire de voie.",
+    "answer_en": "It indicates a mandatory lane change.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quand les distances de freinage augmentent-elles ?",
+    "en": "When does braking distance increase?",
+    "options": ["Sur route sèche", "Par temps de pluie", "Quand je roule lentement"],
+    "answer": 1,
+    "answer_fr": "Les distances de freinage augmentent par temps de pluie.",
+    "answer_en": "Braking distances increase in rainy conditions.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Puis-je dépasser un véhicule qui tourne à gauche ?",
+    "en": "Can I overtake a vehicle turning left?",
+    "options": ["Oui, par la droite", "Non, jamais", "Seulement sur autoroute"],
+    "answer": 0,
+    "answer_fr": "Il est autorisé de dépasser par la droite un véhicule qui tourne à gauche.",
+    "answer_en": "It is allowed to overtake on the right a vehicle turning left.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quelle est la priorité à une intersection sans signalisation ?",
+    "en": "What is the rule at an unmarked intersection?",
+    "options": ["Priorité à droite", "Priorité à gauche", "Priorité aux véhicules les plus rapides"],
+    "answer": 0,
+    "answer_fr": "Sans signalisation, la priorité est à droite.",
+    "answer_en": "At unmarked intersections, priority is to the right.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quand faut-il allumer les feux de détresse ?",
+    "en": "When should I activate the hazard lights?",
+    "options": ["Pour dire bonjour", "En cas de danger ou d’arrêt imprévu", "Quand je dépasse un camion"],
+    "answer": 1,
+    "answer_fr": "Les feux de détresse s’utilisent en cas de danger ou d’arrêt imprévu.",
+    "answer_en": "Hazard lights are used in case of danger or unexpected stops.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quel équipement est obligatoire pour tous les passagers ?",
+    "en": "What equipment is mandatory for all passengers?",
+    "options": ["Le gilet jaune", "Le casque", "La ceinture de sécurité"],
+    "answer": 2,
+    "answer_fr": "Tous les passagers doivent porter une ceinture de sécurité.",
+    "answer_en": "All passengers must wear a seatbelt.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Que signifie un panneau indiquant 'STOP' ?",
+    "en": "What does a 'STOP' sign mean?",
+    "options": ["Ralentir", "S’arrêter et céder le passage", "Passage libre"],
+    "answer": 1,
+    "answer_fr": "Le panneau STOP impose un arrêt et de céder le passage.",
+    "answer_en": "The STOP sign requires stopping and giving way.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Que dois-je vérifier avant de doubler un véhicule ?",
+    "en": "What should I check before overtaking a vehicle?",
+    "options": ["La présence d’une aire de repos", "La distance de freinage", "Les rétroviseurs et l’angle mort"],
+    "answer": 2,
+    "answer_fr": "Il faut vérifier les rétroviseurs et l’angle mort avant de doubler.",
+    "answer_en": "You should check mirrors and blind spots before overtaking.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quels sont les effets du téléphone au volant ?",
+    "en": "What are the effects of using a phone while driving?",
+    "options": ["Amélioration de l’attention", "Réduction de la vigilance", "Aucune influence"],
+    "answer": 1,
+    "answer_fr": "Le téléphone au volant diminue fortement la vigilance.",
+    "answer_en": "Using a phone while driving greatly reduces alertness.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quel comportement adopter à l’approche d’un passage piéton ?",
+    "en": "What behavior should I adopt when approaching a pedestrian crossing?",
+    "options": ["Accélérer pour passer avant le piéton", "S'arrêter si un piéton s’engage", "Klaxonner pour prévenir"],
+    "answer": 1,
+    "answer_fr": "Il faut s’arrêter si un piéton est engagé sur le passage.",
+    "answer_en": "You must stop if a pedestrian is on the crossing.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Pourquoi ajuster les rétroviseurs avant de démarrer ?",
+    "en": "Why should you adjust mirrors before driving?",
+    "options": ["Pour voir l’intérieur du véhicule", "Pour surveiller les passagers", "Pour éliminer les angles morts"],
+    "answer": 2,
+    "answer_fr": "Les rétroviseurs aident à réduire les angles morts.",
+    "answer_en": "Mirrors help reduce blind spots.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quel est le rôle du régulateur de vitesse ?",
+    "en": "What is the function of cruise control?",
+    "options": ["Augmenter la vitesse automatiquement", "Maintenir une vitesse constante", "Réduire la consommation instantanément"],
+    "answer": 1,
+    "answer_fr": "Le régulateur maintient une vitesse constante sans appuyer sur l’accélérateur.",
+    "answer_en": "Cruise control keeps a constant speed without pressing the accelerator.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quand utiliser les feux de position ?",
+    "en": "When should position lights be used?",
+    "options": ["En cas de forte pluie", "Lors du stationnement de nuit", "Pour doubler"],
+    "answer": 1,
+    "answer_fr": "Les feux de position s’utilisent quand le véhicule est stationné la nuit.",
+    "answer_en": "Position lights are used when parking at night.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quel est l’intérêt du recyclage de l’huile moteur ?",
+    "en": "What is the benefit of recycling engine oil?",
+    "options": ["Réduire les coûts d’assurance", "Protéger l’environnement", "Allonger la durée de vie des pneus"],
+    "answer": 1,
+    "answer_fr": "Le recyclage de l’huile réduit la pollution et protège l’environnement.",
+    "answer_en": "Recycling oil reduces pollution and protects the environment.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Pourquoi faut-il respecter les distances de sécurité ?",
+    "en": "Why must you respect safety distances?",
+    "options": ["Pour doubler plus facilement", "Pour éviter les collisions", "Pour économiser du carburant"],
+    "answer": 1,
+    "answer_fr": "Respecter les distances permet d’éviter les collisions en cas de freinage brusque.",
+    "answer_en": "Keeping distances helps avoid collisions during sudden braking.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "À quoi sert le contrôle technique ?",
+    "en": "What is the purpose of the vehicle inspection?",
+    "options": ["Augmenter la vitesse maximale", "Vérifier la sécurité du véhicule", "Changer les pneus automatiquement"],
+    "answer": 1,
+    "answer_fr": "Le contrôle technique sert à vérifier la sécurité et la conformité du véhicule.",
+    "answer_en": "The inspection checks the safety and compliance of the vehicle.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Comment reconnaître un passage à niveau ?",
+    "en": "How can you recognize a level crossing?",
+    "options": ["Panneaux spécifiques et barrières", "Peinture au sol uniquement", "Absence totale de signalisation"],
+    "answer": 0,
+    "answer_fr": "Les passages à niveau sont signalés par des panneaux et parfois des barrières.",
+    "answer_en": "Level crossings are marked by signs and sometimes barriers.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Pourquoi ralentir à l’approche d’un chantier ?",
+    "en": "Why should you slow down near roadworks?",
+    "options": ["Pour protéger les ouvriers", "Pour économiser du carburant", "Pour profiter du paysage"],
+    "answer": 0,
+    "answer_fr": "Ralentir près d’un chantier protège les ouvriers et évite les accidents.",
+    "answer_en": "Slowing down near worksites protects workers and prevents accidents.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Que faire si un voyant rouge s’allume sur le tableau de bord ?",
+    "en": "What should you do if a red warning light comes on the dashboard?",
+    "options": ["Ignorer", "Arrêter le véhicule dès que possible", "Accélérer pour éviter le problème"],
+    "answer": 1,
+    "answer_fr": "Un voyant rouge indique un danger ; il faut s’arrêter dès que possible.",
+    "answer_en": "A red warning light signals danger; you must stop as soon as possible.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Comment réagir en cas d’aquaplaning ?",
+    "en": "How should you react in case of aquaplaning?",
+    "options": ["Freiner brusquement", "Accélérer", "Relâcher l’accélérateur doucement"],
+    "answer": 2,
+    "answer_fr": "Il faut relâcher l’accélérateur doucement sans freiner brutalement.",
+    "answer_en": "You should gently release the accelerator and avoid harsh braking.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quel est le rôle des amortisseurs ?",
+    "en": "What is the role of shock absorbers?",
+    "options": ["Améliorer l’esthétique", "Assurer le confort et l’adhérence", "Accroître la consommation"],
+    "answer": 1,
+    "answer_fr": "Les amortisseurs assurent le confort et l’adhérence du véhicule.",
+    "answer_en": "Shock absorbers provide comfort and grip.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Que signifie une ligne discontinue au sol ?",
+    "en": "What does a broken line on the ground mean?",
+    "options": ["Stationnement autorisé", "Interdiction de dépasser", "Dépassement autorisé si la visibilité est bonne"],
+    "answer": 2,
+    "answer_fr": "Une ligne discontinue permet le dépassement si la visibilité est suffisante.",
+    "answer_en": "A broken line allows overtaking if visibility is sufficient.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quand faut-il utiliser les feux de brouillard arrière ?",
+    "en": "When should you use rear fog lights?",
+    "options": ["Par beau temps", "Par forte pluie ou brouillard", "La nuit sur autoroute"],
+    "answer": 1,
+    "answer_fr": "Ils s’utilisent en cas de forte pluie ou de brouillard dense.",
+    "answer_en": "They are used in heavy rain or dense fog.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quel est le rôle de l’embrayage ?",
+    "en": "What is the function of the clutch?",
+    "options": ["Freiner le véhicule", "Changer de vitesse sans caler", "Gérer la climatisation"],
+    "answer": 1,
+    "answer_fr": "L’embrayage permet de changer de vitesse sans caler le moteur.",
+    "answer_en": "The clutch allows you to change gear without stalling.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Que signifie une flèche verte sur un feu rouge ?",
+    "en": "What does a green arrow on a red light mean?",
+    "options": ["Passage libre pour tous", "Priorité à droite", "Tourner uniquement si la voie est libre"],
+    "answer": 2,
+    "answer_fr": "Je peux tourner dans la direction de la flèche si la voie est libre.",
+    "answer_en": "You may turn in the direction of the arrow if the way is clear.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Pourquoi les pneus doivent-ils être bien gonflés ?",
+    "en": "Why must tires be properly inflated?",
+    "options": ["Pour améliorer l’aérodynamisme", "Pour réduire le bruit", "Pour assurer la tenue de route et réduire la consommation"],
+    "answer": 2,
+    "answer_fr": "Des pneus bien gonflés garantissent une bonne tenue de route et réduisent la consommation.",
+    "answer_en": "Properly inflated tires ensure grip and lower fuel consumption.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quand faut-il signaler un changement de direction ?",
+    "en": "When should you signal a change in direction?",
+    "options": ["Au dernier moment", "Avant d’engager la manœuvre", "Uniquement sur autoroute"],
+    "answer": 1,
+    "answer_fr": "Il faut avertir les autres avant de changer de direction.",
+    "answer_en": "You must signal before changing direction.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "À quoi sert un triangle de présignalisation ?",
+    "en": "What is a warning triangle used for?",
+    "options": ["Indiquer une déviation", "Signaler un véhicule en panne", "Décorer le coffre"],
+    "answer": 1,
+    "answer_fr": "Il sert à prévenir les autres usagers d’un véhicule en panne.",
+    "answer_en": "It alerts other road users of a broken-down vehicle.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quelle est la signification d’un panneau de danger avec un point d’exclamation ?",
+    "en": "What does a danger sign with an exclamation mark mean?",
+    "options": ["Présence d’une école", "Danger général", "Priorité à droite"],
+    "answer": 1,
+    "answer_fr": "Un panneau avec un point d’exclamation indique un danger non spécifié.",
+    "answer_en": "A sign with an exclamation mark indicates an unspecified hazard.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quand puis-je franchir une ligne continue ?",
+    "en": "When may I cross a solid line?",
+    "options": ["Jamais sauf en cas de nécessité", "Pour dépasser un vélo", "Quand il n’y a pas de radar"],
+    "answer": 0,
+    "answer_fr": "Une ligne continue ne peut être franchie qu’en cas de nécessité absolue.",
+    "answer_en": "A solid line may only be crossed in cases of absolute necessity.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quel comportement adopter face à un piéton malvoyant ?",
+    "en": "How should you behave near a visually impaired pedestrian?",
+    "options": ["Klaxonner pour prévenir", "S’arrêter et lui laisser la priorité", "Passer rapidement"],
+    "answer": 1,
+    "answer_fr": "Il faut toujours s’arrêter et laisser la priorité à un piéton malvoyant.",
+    "answer_en": "You must always stop and give way to a visually impaired pedestrian.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Pourquoi faut-il éviter de freiner brusquement sur route mouillée ?",
+    "en": "Why should you avoid sudden braking on a wet road?",
+    "options": ["Cela augmente la visibilité", "Cela peut entraîner une perte d’adhérence", "Cela économise du carburant"],
+    "answer": 1,
+    "answer_fr": "Le freinage brutal sur route mouillée peut provoquer une perte d’adhérence.",
+    "answer_en": "Sudden braking on wet roads can cause loss of grip.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Que faire avant de quitter un véhicule stationné ?",
+    "en": "What should you do before leaving a parked vehicle?",
+    "options": ["Rien", "Couper le moteur et vérifier la fermeture", "Laisser les clés sur le contact"],
+    "answer": 1,
+    "answer_fr": "Il faut couper le moteur et vérifier que le véhicule est bien fermé.",
+    "answer_en": "Turn off the engine and ensure the vehicle is properly locked.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "À quoi servent les bandes rugueuses au sol ?",
+    "en": "What are rumble strips on the road used for?",
+    "options": ["Décoration", "Réveiller le conducteur inattentif", "Améliorer le confort"],
+    "answer": 1,
+    "answer_fr": "Les bandes rugueuses alertent le conducteur par des vibrations.",
+    "answer_en": "Rumble strips alert inattentive drivers through vibration.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quelle est la signification d’un feu orange clignotant ?",
+    "en": "What does a flashing amber traffic light mean?",
+    "options": ["Passage obligatoire", "Ralentir et céder le passage", "Arrêt obligatoire"],
+    "answer": 1,
+    "answer_fr": "Un feu orange clignotant signifie ralentir et céder le passage.",
+    "answer_en": "A flashing amber light means slow down and give way.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Que signifie un panneau bleu avec une flèche blanche ?",
+    "en": "What does a blue sign with a white arrow indicate?",
+    "options": ["Stationnement interdit", "Sens obligatoire", "Route secondaire"],
+    "answer": 1,
+    "answer_fr": "Ce panneau indique une direction obligatoire.",
+    "answer_en": "This sign indicates a mandatory direction.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Pourquoi faut-il respecter les limitations de vitesse ?",
+    "en": "Why must you respect speed limits?",
+    "options": ["Pour arriver plus tôt", "Pour éviter l’ennui", "Pour garantir la sécurité de tous"],
+    "answer": 2,
+    "answer_fr": "Le respect des limitations garantit la sécurité de tous les usagers.",
+    "answer_en": "Respecting speed limits ensures everyone's safety.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Comment circuler dans un rond-point ?",
+    "en": "How should you drive in a roundabout?",
+    "options": ["Entrer sans céder le passage", "Respecter la priorité à gauche", "Respecter la priorité à droite"],
+    "answer": 2,
+    "answer_fr": "Dans un rond-point, la priorité est à gauche sauf indication contraire.",
+    "answer_en": "In a roundabout, give way to the left unless otherwise indicated.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Pourquoi faut-il vérifier la pression des pneus régulièrement ?",
+    "en": "Why should you check tire pressure regularly?",
+    "options": ["Pour décorer les pneus", "Pour assurer la sécurité et réduire l'usure", "Pour rendre la voiture plus rapide"],
+    "answer": 1,
+    "answer_fr": "Une bonne pression assure sécurité et longévité des pneus.",
+    "answer_en": "Proper pressure ensures safety and prolongs tire life.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Que faire si un animal traverse brusquement la route ?",
+    "en": "What should you do if an animal suddenly crosses the road?",
+    "options": ["Klaxonner et accélérer", "Essayer de l'éviter sans danger", "Sortir du véhicule"],
+    "answer": 1,
+    "answer_fr": "Il faut tenter d’éviter l’animal sans mettre en danger les autres.",
+    "answer_en": "Try to avoid the animal without endangering others.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quand dois-je utiliser les feux de route ?",
+    "en": "When should I use high-beam headlights?",
+    "options": ["En ville", "Sur route non éclairée et sans usagers", "Quand il pleut"],
+    "answer": 1,
+    "answer_fr": "Les feux de route s’utilisent sur route sombre sans autres véhicules.",
+    "answer_en": "High-beam lights are used on dark roads without other vehicles.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Comment reconnaître un véhicule prioritaire ?",
+    "en": "How do you recognize a priority vehicle?",
+    "options": ["Il est rouge", "Il a une sirène et un gyrophare", "Il va très vite"],
+    "answer": 1,
+    "answer_fr": "Un véhicule prioritaire utilise sirène et gyrophare.",
+    "answer_en": "Priority vehicles use sirens and flashing lights.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Pourquoi doit-on adapter sa vitesse ?",
+    "en": "Why must you adapt your speed?",
+    "options": ["Pour faire plaisir au moniteur", "Pour s’amuser", "Pour s’adapter aux conditions de circulation"],
+    "answer": 2,
+    "answer_fr": "La vitesse doit être adaptée à la circulation, au temps, et à la route.",
+    "answer_en": "Speed must match traffic, weather, and road conditions.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quel est le rôle du frein moteur ?",
+    "en": "What is engine braking?",
+    "options": ["Réchauffer le moteur", "Réduire la vitesse sans freiner", "Augmenter la puissance"],
+    "answer": 1,
+    "answer_fr": "Le frein moteur permet de ralentir sans utiliser la pédale de frein.",
+    "answer_en": "Engine braking slows the vehicle without using the brake pedal.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Que signifie une voie réservée aux bus ?",
+    "en": "What does a bus-only lane mean?",
+    "options": ["Accès libre pour tous", "Voie interdite sauf aux bus", "Stationnement autorisé"],
+    "answer": 1,
+    "answer_fr": "Une voie bus est interdite aux autres usagers sauf signalisation contraire.",
+    "answer_en": "Bus lanes are prohibited to others unless stated otherwise.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quand dois-je faire un contrôle technique ?",
+    "en": "When must a vehicle inspection be carried out?",
+    "options": ["Tous les ans", "Tous les 2 ans après la 1ère visite", "Jamais si la voiture est neuve"],
+    "answer": 1,
+    "answer_fr": "Après 4 ans, le contrôle technique est obligatoire tous les 2 ans.",
+    "answer_en": "After 4 years, inspections are required every 2 years.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quelle est la priorité dans une zone de rencontre ?",
+    "en": "What is the rule in a shared space zone?",
+    "options": ["Les voitures sont prioritaires", "Les piétons sont prioritaires", "Les cyclistes sont prioritaires"],
+    "answer": 1,
+    "answer_fr": "Dans une zone de rencontre, les piétons sont prioritaires.",
+    "answer_en": "In shared zones, pedestrians have priority.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Pourquoi respecter les panneaux de signalisation ?",
+    "en": "Why obey road signs?",
+    "options": ["Parce qu’ils sont jolis", "Pour éviter les amendes", "Pour garantir la sécurité et la fluidité"],
+    "answer": 2,
+    "answer_fr": "Les panneaux assurent la sécurité et l’organisation du trafic.",
+    "answer_en": "Road signs ensure safety and traffic organization.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Comment repérer un passage pour piétons ?",
+    "en": "How can you recognize a pedestrian crossing?",
+    "options": ["Par des bandes blanches sur la chaussée", "Par un panneau de danger triangulaire jaune", "Par une lumière bleue"],
+    "answer": 0,
+    "answer_fr": "Un passage pour piétons est signalé par des bandes blanches au sol.",
+    "answer_en": "Pedestrian crossings are marked by white stripes on the ground.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quel comportement adopter en cas de fort vent ?",
+    "en": "What behavior should be adopted in strong wind conditions?",
+    "options": ["Rouler vite pour passer rapidement", "Tenir fermement le volant et réduire la vitesse", "Ouvrir les fenêtres"],
+    "answer": 1,
+    "answer_fr": "En cas de vent fort, il faut réduire la vitesse et bien tenir le volant.",
+    "answer_en": "In strong wind, reduce speed and hold the steering wheel firmly.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Pourquoi doit-on porter la ceinture de sécurité ?",
+    "en": "Why must we wear seatbelts?",
+    "options": ["Pour éviter les contraventions", "Pour être à la mode", "Pour se protéger en cas d’accident"],
+    "answer": 2,
+    "answer_fr": "La ceinture protège en cas d'accident.",
+    "answer_en": "The seatbelt protects you in case of an accident.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quel est le rôle de l’airbag ?",
+    "en": "What is the role of the airbag?",
+    "options": ["Décorer l’intérieur du véhicule", "Empêcher les collisions", "Amortir les chocs en cas d’accident"],
+    "answer": 2,
+    "answer_fr": "L'airbag atténue les chocs lors d'une collision.",
+    "answer_en": "The airbag cushions impact during a collision.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Comment se comporter à proximité d’un cycliste ?",
+    "en": "How should you behave near a cyclist?",
+    "options": ["Le dépasser de très près", "Lui laisser de l’espace", "Klaxonner pour signaler votre présence"],
+    "answer": 1,
+    "answer_fr": "Il faut toujours laisser de l'espace à un cycliste.",
+    "answer_en": "Always give space to a cyclist.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Que signifie un panneau rond avec un fond bleu ?",
+    "en": "What does a round sign with a blue background mean?",
+    "options": ["Obligation", "Interdiction", "Information facultative"],
+    "answer": 0,
+    "answer_fr": "Un panneau rond bleu indique une obligation.",
+    "answer_en": "A round blue sign indicates an obligation.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Pourquoi faut-il entretenir son véhicule ?",
+    "en": "Why should you maintain your vehicle?",
+    "options": ["Pour qu’il soit plus beau", "Pour éviter les pannes et rester en sécurité", "Pour faire du bruit"],
+    "answer": 1,
+    "answer_fr": "Un bon entretien évite les pannes et garantit la sécurité.",
+    "answer_en": "Proper maintenance prevents breakdowns and ensures safety.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Comment détecter une chaussée glissante ?",
+    "en": "How can you detect a slippery road?",
+    "options": ["À l’odeur", "À la sensation de glisse et aux conditions météorologiques", "En regardant la couleur du ciel"],
+    "answer": 1,
+    "answer_fr": "On reconnaît une route glissante à la météo et à la sensation de conduite.",
+    "answer_en": "You detect slippery roads by weather and driving feel.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quand faut-il utiliser les feux de détresse ?",
+    "en": "When should hazard lights be used?",
+    "options": ["Lors d’un dépassement", "En cas de danger ou d’arrêt d’urgence", "Quand il fait nuit"],
+    "answer": 1,
+    "answer_fr": "Les feux de détresse s’activent en cas de danger ou d’arrêt imprévu.",
+    "answer_en": "Hazard lights are used in emergencies or unexpected stops.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quel est le principal risque de la fatigue au volant ?",
+    "en": "What is the main risk of driving while tired?",
+    "options": ["Augmentation de la consommation", "Diminution de la vigilance", "Excès de vitesse"],
+    "answer": 1,
+    "answer_fr": "La fatigue diminue la vigilance et augmente le risque d’accident.",
+    "answer_en": "Fatigue reduces alertness and increases the risk of accidents.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quand dois-je ralentir à l’approche d’un passage à niveau ?",
+    "en": "When should I slow down near a level crossing?",
+    "options": ["Uniquement si je vois un train", "Toujours, même si les barrières sont levées", "Jamais, sauf si un feu est rouge"],
+    "answer": 1,
+    "answer_fr": "Il faut ralentir systématiquement à l’approche d’un passage à niveau, même si les barrières sont levées.",
+    "answer_en": "You should always slow down near a level crossing, even if the barriers are raised.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Comment adapter sa conduite en cas de brouillard épais ?",
+    "en": "How should you adapt your driving in heavy fog?",
+    "options": ["Utiliser les feux de route", "Utiliser les feux de brouillard et ralentir", "Conduire normalement"],
+    "answer": 1,
+    "answer_fr": "En cas de brouillard épais, il faut ralentir et utiliser les feux de brouillard.",
+    "answer_en": "In heavy fog, slow down and use fog lights.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Pourquoi les distances de sécurité sont-elles importantes ?",
+    "en": "Why are safe following distances important?",
+    "options": ["Pour éviter les dépassements", "Pour réduire la pollution", "Pour pouvoir freiner à temps"],
+    "answer": 2,
+    "answer_fr": "Les distances de sécurité permettent de freiner à temps en cas d’imprévu.",
+    "answer_en": "Safe distances allow you to brake in time if something unexpected happens.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quelle est la règle en cas d’intersection sans signalisation ?",
+    "en": "What is the rule at an intersection with no signage?",
+    "options": ["Priorité à droite", "Priorité à gauche", "Priorité aux véhicules rapides"],
+    "answer": 0,
+    "answer_fr": "En l’absence de signalisation, la priorité est à droite.",
+    "answer_en": "If there is no signage, priority is to the right.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Que signifie une lumière orange fixe au feu tricolore ?",
+    "en": "What does a steady amber traffic light mean?",
+    "options": ["Accélérer pour passer", "S’arrêter sauf si je suis trop près pour freiner en sécurité", "Tourner à gauche"],
+    "answer": 1,
+    "answer_fr": "Un feu orange fixe impose de s’arrêter sauf si cela est dangereux.",
+    "answer_en": "A steady amber light means stop unless stopping is dangerous.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quel est le rôle des rétroviseurs ?",
+    "en": "What is the role of mirrors?",
+    "options": ["Décoration", "Voir ce qui se passe autour du véhicule", "Donner des signaux"],
+    "answer": 1,
+    "answer_fr": "Les rétroviseurs permettent de surveiller l’environnement du véhicule.",
+    "answer_en": "Mirrors help you monitor the surroundings of your vehicle.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Comment réagir si un véhicule d’urgence arrive derrière vous ?",
+    "en": "What should you do if an emergency vehicle approaches from behind?",
+    "options": ["Accélérer pour ne pas gêner", "S’arrêter immédiatement", "Faciliter son passage en me rangeant à droite si possible"],
+    "answer": 2,
+    "answer_fr": "Il faut faciliter le passage des véhicules d’urgence sans créer de danger.",
+    "answer_en": "You must make way for emergency vehicles without endangering others.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Quand utiliser le clignotant ?",
+    "en": "When should you use turn signals?",
+    "options": ["Seulement en ville", "À chaque changement de direction ou de voie", "Jamais sur autoroute"],
+    "answer": 1,
+    "answer_fr": "Les clignotants doivent être utilisés pour chaque changement de direction ou de voie.",
+    "answer_en": "Use signals for every change in direction or lane.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Que faire si le moteur surchauffe ?",
+    "en": "What should you do if your engine overheats?",
+    "options": ["Continuer à rouler normalement", "Arrêter le véhicule dès que possible", "Mettre le chauffage à fond"],
+    "answer": 1,
+    "answer_fr": "Il faut arrêter le véhicule dès que possible en cas de surchauffe.",
+    "answer_en": "Stop the vehicle as soon as possible if it overheats.",
+    "image": "images/placeholder.png"
+  },
+  {
+    "fr": "Pourquoi faut-il respecter les distances de freinage ?",
+    "en": "Why must you respect braking distances?",
+    "options": ["Pour éviter les collisions", "Pour freiner plus lentement", "Pour économiser du carburant"],
+    "answer": 0,
+    "answer_fr": "Respecter les distances de freinage permet d’éviter les collisions.",
+    "answer_en": "Respecting braking distances helps avoid collisions.",
     "image": "images/placeholder.png"
   }
 ]
+
+
+
+
