@@ -94,6 +94,11 @@ function checkAnswer(selected) {
     }
 }
 
+function showResults() {
+    alert(`You scored ${score} out of ${questions.length}`);
+    progressTracker.innerText = `Final Score: ${score}/${questions.length}`;
+}
+
 showAnswerButton.addEventListener('click', () => {
     if (currentQuestion < questions.length) {
         const q = questions[currentQuestion];
