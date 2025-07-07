@@ -92,4 +92,35 @@ function checkAnswer(selected) {
     } else {
         alert(`Wrong! The correct answer was: ${questions[currentQuestion].options[correct]}`);
     }
+
+    currentQuestion++;
+
+    if (currentQuestion >= questions.length) {
+        showResults();
+    } else {
+        showQuestion();
+    }
 }
+
+function showResults() {
+    alert(`You scored ${score} out of ${questions.length}`);
+    progressTracker.innerText = `Final Score: ${score}/${questions.length}`;
+}
+
+showAnswerButton.addEventListener('click', () => {
+    if (currentQuestion < questions.length) {
+        const q = questions[currentQuestion];
+        answerContainer.innerText = language === 'fr' ? q.answer_fr : q.answer_en;
+    }
+});
+
+// Hide and disable the Next button since progression is automatic
+nextButton.disabled = true;
+nextButton.style.display = 'none';
+
+languageToggle.addEventListener('click', () => {
+    language = language === 'fr' ? 'en' : 'fr';
+    showQuestion();
+});
+
+loadQuestions();
