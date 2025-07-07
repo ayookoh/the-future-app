@@ -73,7 +73,8 @@ function showQuestion() {
 
     // Display options
     optionsContainer.innerHTML = '';
-    q.options.forEach((option, index) => {
+    const opts = language === 'fr' ? q.options : q.options_en;
+    opts.forEach((option, index) => {
         const button = document.createElement('button');
         button.innerText = option;
         button.onclick = () => checkAnswer(index);
@@ -85,11 +86,13 @@ function showQuestion() {
 }
 
 function checkAnswer(selected) {
-    const correct = questions[currentQuestion].answer;
+    const q = questions[currentQuestion];
+    const correct = q.answer;
+    const opts = language === 'fr' ? q.options : q.options_en;
     if (selected === correct) {
         score++;
         alert('Correct!');
     } else {
-        alert(`Wrong! The correct answer was: ${questions[currentQuestion].options[correct]}`);
+        alert(`Wrong! The correct answer was: ${opts[correct]}`);
     }
 }
