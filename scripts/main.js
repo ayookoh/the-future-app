@@ -96,19 +96,13 @@ function checkAnswer(selected) {
         alert(`Wrong! The correct answer was: ${opts[correct]}`);
     }
 
-    currentQuestion++;
-
-    if (currentQuestion >= questions.length) {
-        showResults();
-    } else {
-        showQuestion();
-    }
 }
 
 function showResults() {
     alert(`You scored ${score} out of ${questions.length}`);
     progressTracker.innerText = `Final Score: ${score}/${questions.length}`;
 }
+
 
 showAnswerButton.addEventListener('click', () => {
     if (currentQuestion < questions.length) {
@@ -117,9 +111,14 @@ showAnswerButton.addEventListener('click', () => {
     }
 });
 
-// Hide and disable the Next button since progression is automatic
-nextButton.disabled = true;
-nextButton.style.display = 'none';
+nextButton.addEventListener('click', () => {
+    currentQuestion++;
+    if (currentQuestion >= questions.length) {
+        showResults();
+    } else {
+        showQuestion();
+    }
+});
 
 languageToggle.addEventListener('click', () => {
     language = language === 'fr' ? 'en' : 'fr';
