@@ -113,11 +113,7 @@ showAnswerButton.addEventListener('click', () => {
 
 nextButton.addEventListener('click', () => {
     currentQuestion++;
-    if (currentQuestion >= questions.length) {
-        showResults();
-    } else {
-        showQuestion();
-    }
+
 });
 
 languageToggle.addEventListener('click', () => {
