@@ -5,7 +5,7 @@ Each question entry in `questions.json` defines text in both languages, a list o
 ### Usage
 
 Open `index.html` in a browser. Use the **FR / EN** button to toggle languages.
-Click **Show Answer** to reveal the answer and **Next** to move to the next question.
+Select an option to check your answer. Click **Show Answer** for an explanation and press **Next** to move forward. Your total score appears after all questions are answered or the timer ends.
 Questions are loaded from `questions.json`, which includes an `image` field for
 each entry. All images should be placed in the `images` folder. A generic
 `placeholder.png` is bundled and will be used whenever an entry does not specify
