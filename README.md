@@ -12,3 +12,16 @@ each entry. All images should be placed in the `images` folder. A generic
 its own image. The repository contains only a small sample of questions; feel
 free to extend the list or replace the placeholder with your own artwork by
 editing the JSON file and adding images to the folder.
+
+### Adding your own images
+
+Any PNG or JPG file can be placed in the `images` directory. Suitable images can
+come from open-license stock photo sites or pictures you've taken yourself.
+When specifying an image for a question in `questions.json`, set the `image`
+field to the file name relative to this directory, for example:
+
+```json
+"image": "images/my-photo.jpg"
+```
+
+If the field is omitted, the app automatically displays `images/placeholder.png`.
