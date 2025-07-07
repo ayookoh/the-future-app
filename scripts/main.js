@@ -117,9 +117,10 @@ showAnswerButton.addEventListener('click', () => {
     }
 });
 
-// Hide and disable the Next button since progression is automatic
-nextButton.disabled = true;
-nextButton.style.display = 'none';
+nextButton.addEventListener('click', () => {
+    currentQuestion++;
+    showQuestion();
+});
 
 languageToggle.addEventListener('click', () => {
     language = language === 'fr' ? 'en' : 'fr';
