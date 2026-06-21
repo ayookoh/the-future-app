@@ -14,7 +14,6 @@ async function seedDefaults() {
     data: {
       label: "Ayo",
       name: "Ayodele Okoh",
-      email: "ayookoh@gmail.com",
       fullText: ayoProfile,
       targetTitles: JSON.stringify(["IT Category Manager", "IT Procurement Manager", "Strategic Sourcing Manager IT", "Vendor Risk Lead"]),
       locations: JSON.stringify(["France", "Remote Europe", "Île-de-France"]),
@@ -22,9 +21,9 @@ async function seedDefaults() {
     }
   });
 
-  await prisma.candidateProfile.create({
+  const second = await prisma.candidateProfile.create({
     data: {
-      label: "Second profile",
+      label: "Second candidate",
       name: "Profile owner",
       fullText: "Paste the second candidate's complete CV and target roles here. This profile is deliberately editable and does not contain invented achievements.",
       targetTitles: JSON.stringify([]),
@@ -32,17 +31,29 @@ async function seedDefaults() {
     }
   });
 
-  await prisma.searchConfig.create({
-    data: {
-      profileId: ayo.id,
-      label: "Ayo — IT procurement France and remote Europe",
-      keywords: "IT Procurement Manager OR IT Category Manager OR Strategic Sourcing Manager IT",
-      location: "Île-de-France",
-      inseeCode: "78120",
-      radiusKm: 80,
-      maxDaysOld: 7,
-      romeCodes: JSON.stringify(["M1101", "M1102"])
-    }
+  await prisma.searchConfig.createMany({
+    data: [
+      {
+        profileId: ayo.id,
+        label: "Ayo — IT procurement France and remote Europe",
+        keywords: "IT Procurement Manager OR IT Category Manager OR Strategic Sourcing Manager IT",
+        location: "Île-de-France",
+        inseeCode: "78120",
+        radiusKm: 80,
+        maxDaysOld: 7,
+        romeCodes: JSON.stringify(["M1101", "M1102"])
+      },
+      {
+        profileId: second.id,
+        label: "Second candidate — configure target search",
+        keywords: "",
+        location: "France",
+        radiusKm: 80,
+        maxDaysOld: 7,
+        romeCodes: JSON.stringify([]),
+        active: false
+      }
+    ]
   });
 }
 
@@ -58,7 +69,7 @@ export default async function Home() {
   return (
     <main>
       <h1>The Deal Desk</h1>
-      <p className="muted">Multi-profile AI job-search desk for senior procurement applications. Your profile and your wife's profile can run separately with their own targets, locations and pipeline history.</p>
+      <p className="muted">Multi-profile AI job-search desk for senior procurement applications. Each candidate profile runs with its own targets, locations and pipeline history.</p>
 
       <div className="grid">
         <section className="card">
@@ -66,7 +77,7 @@ export default async function Home() {
           {profiles.map((profile) => (
             <p key={profile.id}><strong>{profile.label}</strong><br /><small>{profile.name}</small></p>
           ))}
-          <p className="muted">Edit screens are scaffolded through the API. The next UI step is a richer profile editor with autosave.</p>
+          <p className="muted">Use the profile API to update each CV, contact fields, target titles and preferred locations.</p>
         </section>
 
         <section className="card">
