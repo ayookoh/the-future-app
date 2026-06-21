@@ -1,27 +1,46 @@
-# The Future App
-This simple web application displays driving practice questions in French and English.
-Each question entry in `questions.json` defines text in both languages, a list of options, the correct answer index, and an optional `image` path. If no image is specified, the app falls back to `images/placeholder.png`.
+# The Deal Desk
 
-### Usage
+A multi-profile, AI-assisted job-search application for senior procurement professionals.
 
-Open `index.html` in a browser. Use the **FR / EN** button to toggle languages.
-Click **Show Answer** to reveal the answer and **Next** to move to the next question.
-Questions are loaded from `questions.json`, which includes an `image` field for
-each entry. All images should be placed in the `images` folder. A generic
-`placeholder.png` is bundled and will be used whenever an entry does not specify
-its own image. The repository contains only a small sample of questions; feel
-free to extend the list or replace the placeholder with your own artwork by
-editing the JSON file and adding images to the folder.
+The app is designed for Ayo's IT procurement job search and can also be used by a second candidate profile, such as his wife, without mixing CVs, target roles, assessments or pipeline history.
 
-### Adding your own images
+## What it does
 
-Any PNG or JPG file can be placed in the `images` directory. Suitable images can
-come from open-license stock photo sites or pictures you've taken yourself.
-When specifying an image for a question in `questions.json`, set the `image`
-field to the file name relative to this directory, for example:
+- Stores editable candidate profiles.
+- Stores separate search configurations per candidate.
+- Sources roles from Adzuna and France Travail through server-side API calls.
+- De-duplicates roles by company, title and location.
+- Scores fit for each role with a language-model adapter.
+- Generates tailored CV bullets and cover emails.
+- Validates generated text so contractions do not reach the user.
+- Tracks assessment and application history.
+- Sends a daily digest from a protected scheduled endpoint.
+- Exports and deletes all stored personal data.
 
-```json
-"image": "images/my-photo.jpg"
+## Local setup
+
+```bash
+cp .env.example .env
+npm install
+npx prisma migrate dev --name init
+npm run dev
 ```
 
-If the field is omitted, the app automatically displays `images/placeholder.png`.
+Visit `http://localhost:3000`.
+
+## Daily run
+
+```bash
+curl -X POST http://localhost:3000/api/run/daily \
+  -H "x-run-secret: $RUN_SECRET"
+```
+
+## Health check
+
+```bash
+curl http://localhost:3000/api/health
+```
+
+## Notes
+
+This repository previously contained a simple driving-practice static app. The Deal Desk branch replaces it with a Next.js application. Keep all credentials in `.env`; do not place provider credentials in browser code.
