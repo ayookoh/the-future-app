@@ -1,0 +1,13 @@
+services:
+  app:
+    image: node:22-alpine
+    working_dir: /app
+    command: sh -c "npm install && npx prisma migrate dev --name init && npm run dev"
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    environment:
+      DATABASE_URL: file:/app/prisma/dev.db
