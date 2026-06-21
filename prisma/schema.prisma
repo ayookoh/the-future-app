@@ -1,0 +1,101 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model CandidateProfile {
+  id           String   @id @default(cuid())
+  label        String
+  fullText     String
+  name         String
+  email        String?
+  phone        String?
+  targetTitles String   @default("[]")
+  locations    String   @default("[]")
+  isDefault    Boolean  @default(false)
+  updatedAt    DateTime @updatedAt
+  createdAt    DateTime @default(now())
+
+  searchConfigs SearchConfig[]
+  assessments   Assessment[]
+}
+
+model SearchConfig {
+  id            String   @id @default(cuid())
+  profileId     String
+  label         String
+  keywords      String
+  location      String
+  inseeCode     String?
+  radiusKm      Int      @default(50)
+  romeCodes     String   @default("[]")
+  maxDaysOld    Int      @default(7)
+  active        Boolean  @default(true)
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  profile CandidateProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+}
+
+model Role {
+  id              String   @id @default(cuid())
+  source          String
+  sourceId        String
+  dedupeHash      String   @unique
+  title           String
+  company         String
+  location        String
+  description     String
+  url             String
+  salary          String?
+  postedAt        DateTime?
+  discoveredAt    DateTime @default(now())
+  seen            Boolean  @default(false)
+  firstPassScore  Int      @default(0)
+
+  assessments Assessment[]
+  application Application?
+}
+
+model Assessment {
+  id          String   @id @default(cuid())
+  roleId      String
+  profileId   String
+  fitScore    Int
+  tier        String
+  verdict     String
+  strengths   String
+  gaps        String
+  keywords    String
+  cvBullets   String?
+  coverEmail  String?
+  createdAt   DateTime @default(now())
+
+  role    Role             @relation(fields: [roleId], references: [id], onDelete: Cascade)
+  profile CandidateProfile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+}
+
+model Application {
+  id        String    @id @default(cuid())
+  roleId    String    @unique
+  status    String    @default("identified")
+  appliedAt DateTime?
+  notes     String?
+  updatedAt DateTime  @updatedAt
+  createdAt DateTime  @default(now())
+
+  role Role @relation(fields: [roleId], references: [id], onDelete: Cascade)
+}
+
+model Run {
+  id         String    @id @default(cuid())
+  startedAt DateTime  @default(now())
+  finishedAt DateTime?
+  rolesFound Int      @default(0)
+  newRoles   Int      @default(0)
+  errors     String   @default("[]")
+}
